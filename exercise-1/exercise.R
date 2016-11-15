@@ -5,7 +5,9 @@ setwd('~/Documents/info-201/m14-shiny/exercise-1/')
 df <- read.csv('https://raw.githubusercontent.com/plotly/datasets/master/2014_us_cities.csv')
 
 # Load your buildMap.R Script
-
+Buildmap <- function(data, title="Default Title") {
+  
+}
 
 # Use your BuildMap function to draw a map of the data
 

@@ -6,9 +6,14 @@ library(shiny)
 
 # Create a shiny server that creates a scatterplot. 
 
+
 # It should takes as an input the number of observations, and a color
 # It should return a rendered plot
 shinyServer(function(input, output) {
   # Save a 'scatter' property which is a renderPlot object (that renders a scatterplot)
-  
+  output$scatter <- renderPlot({ 
+    x <- rnorm(input$num)
+    y <- rnorm(input$num)
+    return(plot(x,y, col=input$color))
+  })
 })
