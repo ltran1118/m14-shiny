@@ -12,7 +12,8 @@ shinyUI(navbarPage('Electoral College',
                               sidebarPanel(
                                 
                                 # Input to select variable to map
-                                selectInput('mapvar', label = 'Variable to Map', choices = list("Population" = 'population', 'Electoral Votes' = 'votes', 'Votes / Population' = 'ratio'))
+                                selectInput('mapvar', label = 'Variable to Map', choices = list("Population" = 'population', 
+                                 'Electoral Votes' = 'votes', 'Votes / Population' = 'ratio'))
                               ),
                               
                               # Main panel: display plotly map

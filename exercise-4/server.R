@@ -1,8 +1,10 @@
 # server.R
 library(dplyr)
+library(shiny)
+library(plotly)
 
 # Read in data
-setwd('~/Documents/info-201/m14-shiny/exercise-4/')
+setwd('~/Desktop/m14-shiny/exercise-4/')
 source('./scripts/buildMap.R')
 source('./scripts/buildScatter.R')
 df <- read.csv('./data/electoral_college.csv', stringsAsFactors = FALSE)
